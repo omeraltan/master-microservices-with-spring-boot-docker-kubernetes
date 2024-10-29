@@ -2,6 +2,8 @@ package com.omer.accounts.constants;
 
 public class AccountsConstants {
 
+    public static final String SYSTEM_USER = "SYSTEM";
+
     private AccountsConstants() {
 
     }
