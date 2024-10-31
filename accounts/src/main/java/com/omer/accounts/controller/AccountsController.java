@@ -22,6 +22,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * @author Ömer ALTAN
+ */
+
 @Tag(
     name = "CRUD REST APIs for Accounts in Bank Application",
     description = "CRUD REST APIs in Bank Application to CREATE, UPDATE, DELETE, AND FETCH account details"
