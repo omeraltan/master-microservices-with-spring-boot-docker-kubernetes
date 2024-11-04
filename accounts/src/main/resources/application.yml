@@ -17,3 +17,15 @@ spring:
       ddl-auto: update                                    # veritabanı otomatik olusturulmasının ayarlanması (kod ile oluşturulan bir tablo varsa eklemeleride yapar.)
     show-sql: true                                        # hibernate console kullanımı için ayarlanıyor (ayrıca olulturulan sql sorgularını console'a yazdırır.).
     database-platform: org.hibernate.dialect.H2Dialect    # hibernate console kullanımı için ayarlanıyor.
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to Bank Application accounts related local APIs"
+  contactDetails:
+    name: "Ömer ALTAN - Developer"
+    email: "omeraltan66@gmail.com"
+  onCallSupports:
+    -(555) 555-1234
+    -(555) 523-1345  
