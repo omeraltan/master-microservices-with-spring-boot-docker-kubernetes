@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to Bank Application accounts related local APIs"
+  contactDetails:
+    name: "Ömer ALTAN - Developer"
+    email: "omeraltan66@gmail.com"
+  onCallSupports:
+    -(555) 555-1234
+    -(555) 523-1345

@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+loans:
+  message: "Welcome to Bank Application loans related prod APIs "
+  contactDetails:
+    name: "Mustafa ALTAN - Product Owner"
+    email: "mustafa@gmail.com.com"
+  onCallSupport:
+    - (723) 656-8709
+    - (156) 342-0956
