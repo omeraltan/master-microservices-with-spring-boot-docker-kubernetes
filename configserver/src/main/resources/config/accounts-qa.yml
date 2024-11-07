@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to Bank Application accounts related QA APIs"
+  contactDetails:
+    name: "Ebru ALTAN - QA Lead"
+    email: "ebrualtan@gmail.com"
+  onCallSupports:
+    -(666) 265-3765
+    -(666) 734-8371

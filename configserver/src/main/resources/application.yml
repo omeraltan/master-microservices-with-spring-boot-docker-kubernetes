@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: "classpath:/config"
+
+server:
+  port: 8071
+
+  # profiles.active özelliği,
+  # Spring uygulaması için etkin profili belirtir. Bu durumda, "native" profili aktif hale getirilmiştir.
+  # Bu durumda, Config Server'nın native profili,
+  # Spring uygulaması için yapılandırma verilerini bir Git deposu yerine doğrudan yerel dosya sisteminden veya sınıf yolundan alır.
+  # Yani, Config Server dosya sisteminde yer alan yapılandırma dosyalarını kullanacaktır.
+
+  # spring.cloud.config.server.native.search-locations özelliği,
+  # Config Server’ın yapılandırma dosyalarını nerede arayacağını belirtir.
+  # classpath:/config olarak belirlenmiş; bu durumda,
+  # Config Server uygulamanın resources/config klasöründe bulunan yapılandırma dosyalarını kullanacaktır.
+
