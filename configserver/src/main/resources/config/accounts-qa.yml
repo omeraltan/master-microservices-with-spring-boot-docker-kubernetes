@@ -6,6 +6,6 @@ accounts:
   contactDetails:
     name: "Ebru ALTAN - QA Lead"
     email: "ebrualtan@gmail.com"
-  onCallSupports:
-    -(666) 265-3765
-    -(666) 734-8371
+  onCallSupport:
+    - (666) 265-3765
+    - (666) 734-8371

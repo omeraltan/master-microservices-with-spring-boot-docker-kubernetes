@@ -2,37 +2,33 @@ server:
   port: 8080                                              # accounts service'in bu porttan çalıması gerektiği söyleniyor.
 
 spring:
+  application:
+    name: "accounts"                                     # accounts service'in ismi ayarlanıyor.
+  profiles:
+    active: "prod"                                       # accounts service'in profile ayarlanıyor.
   datasource:
     url: jdbc:h2:mem:testdb                               # testdb veritabanı kullanımı için url'si ayarlanıyor.
     username: sa                                          # testdb veritabanı kullanımı için kullanıcı adı ayarlanıyor.
     password: ''                                          # testdb veritabanı kullanımı için sifre ayarlanıyor.
     driver-class-name: org.h2.Driver                      # testdb veritabanı kullanımı için driver ayarlanıyor.
-
   h2:
     console:
       enabled: true                                       # h2 console kullanımı için ayarlanıyor.
-
   jpa:
     hibernate:
       ddl-auto: update                                    # veritabanı otomatik olusturulmasının ayarlanması (kod ile oluşturulan bir tablo varsa eklemeleride yapar.)
     show-sql: true                                        # hibernate console kullanımı için ayarlanıyor (ayrıca olulturulan sql sorgularını console'a yazdırır.).
     database-platform: org.hibernate.dialect.H2Dialect    # hibernate console kullanımı için ayarlanıyor.
-
   config:
-    import:
-      - "application_qa.yml"
-      - "application_prod.yml"
-  profiles:
-    active: qa
+    import: "optional:configserver:http://localhost:8071/"
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 
-build:
-  version: "3.0"
-
-accounts:
-  message: "Welcome to Bank Application accounts related local APIs"
-  contactDetails:
-    name: "Ömer ALTAN - Developer"
-    email: "omeraltan66@gmail.com"
-  onCallSupports:
-    -(555) 555-1234
-    -(555) 523-1345
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
