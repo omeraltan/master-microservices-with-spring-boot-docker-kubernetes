@@ -1,24 +1,19 @@
 server:
   port: 8080                                              # accounts service'in bu porttan çalıması gerektiği söyleniyor.
-
 spring:
   application:
     name: "accounts"                                     # accounts service'in ismi ayarlanıyor.
   profiles:
     active: "prod"                                       # accounts service'in profile ayarlanıyor.
   datasource:
-    url: jdbc:h2:mem:testdb                               # testdb veritabanı kullanımı için url'si ayarlanıyor.
-    username: sa                                          # testdb veritabanı kullanımı için kullanıcı adı ayarlanıyor.
-    password: ''                                          # testdb veritabanı kullanımı için sifre ayarlanıyor.
-    driver-class-name: org.h2.Driver                      # testdb veritabanı kullanımı için driver ayarlanıyor.
-  h2:
-    console:
-      enabled: true                                       # h2 console kullanımı için ayarlanıyor.
+    url: jdbc:mysql://localhost:3306/accountsdb?createDatabaseIfNotExist=true                              # accountsdb veritabanı kullanımı için url ayarlanıyor.
+    username: root                                          # testdb veritabanı kullanımı için kullanıcı adı ayarlanıyor.
+    password: root                                          # testdb veritabanı kullanımı için sifre ayarlanıyor.
   jpa:
-    hibernate:
-      ddl-auto: update                                    # veritabanı otomatik olusturulmasının ayarlanması (kod ile oluşturulan bir tablo varsa eklemeleride yapar.)
-    show-sql: true                                        # hibernate console kullanımı için ayarlanıyor (ayrıca olulturulan sql sorgularını console'a yazdırır.).
-    database-platform: org.hibernate.dialect.H2Dialect    # hibernate console kullanımı için ayarlanıyor.
+    show-sql: true
+  sql:
+    init:
+      mode: always
   config:
     import: "optional:configserver:http://localhost:8071/"
   rabbitmq:
