@@ -4,18 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51e563e5-1b33-4c68-8520-887471a5d83e" name="Changes" comment="Docker compose file for default, prod, and qa and other changes">
+    <list default="true" id="51e563e5-1b33-4c68-8520-887471a5d83e" name="Changes" comment="Docker compose files changed.">
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/dto/CardsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/dto/CustomerDetailsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/dto/LoansDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/service/client/CardsFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/service/client/LoansFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/AccountsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/mapper/CustomerMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/prod/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/common-config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/qa/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/qa/common-config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
     </list>
@@ -27,8 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,40 +71,45 @@
     <option name="showScratchesAndConsoles" value="false" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.accounts/Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.cards/Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.configserver/Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.default.configserver: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.default: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.loans/Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
-    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ConfigserverApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Run&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;omer&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/omeraltan/workspace/master-microservices-with-spring-boot-docker-kubernetes/docker-compose/qa&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.accounts/Dockerfile.executor": "Run",
+    "Docker.cards/Dockerfile.executor": "Run",
+    "Docker.configserver/Dockerfile.executor": "Run",
+    "Docker.default.accountsdb: Compose Deployment.executor": "Run",
+    "Docker.default.cardsdb: Compose Deployment.executor": "Run",
+    "Docker.default.configserver: Compose Deployment.executor": "Run",
+    "Docker.default.loansdb: Compose Deployment.executor": "Run",
+    "Docker.default.rabbit: Compose Deployment.executor": "Run",
+    "Docker.default: Compose Deployment.executor": "Run",
+    "Docker.loans/Dockerfile.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
+    "Spring Boot.AccountsApplication.executor": "Run",
+    "Spring Boot.CardsApplication.executor": "Run",
+    "Spring Boot.ConfigserverApplication.executor": "Run",
+    "Spring Boot.EurekaserverApplication.executor": "Run",
+    "Spring Boot.LoansApplication.executor": "Run",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "omer",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/omeraltan/workspace/master-microservices-with-spring-boot-docker-kubernetes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -110,8 +123,12 @@
       <recent name="$PROJECT_DIR$/docker-compose/default" />
       <recent name="$PROJECT_DIR$/configserver/src/main/resources/config" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.omer.accounts.service.client" />
+      <recent name="com.omer.accounts.dto" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CardsApplication">
+  <component name="RunManager" selected="Spring Boot.LoansApplication">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="master-microservices-with-spring-boot-docker-kubernetes" />
       <option name="ENV_FILES" value="" />
@@ -259,6 +276,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekaserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eurekaserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.omer.eurekaserver.EurekaserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="loans" />
@@ -293,50 +317,65 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="cards/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="imageTag" value="micro/cards:latest" />
-          <option name="containerName" value="" />
-          <option name="sourceFilePath" value="cards/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="configserver/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="imageTag" value="micro/configserver:latest" />
-          <option name="containerName" value="" />
-          <option name="sourceFilePath" value="configserver/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="default: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="default.accountsdb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
+          <option name="services">
+            <list>
+              <option value="accountsdb" />
+            </list>
+          </option>
           <option name="sourceFilePath" value="docker-compose/default/docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="loans/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
+    <configuration name="default.cardsdb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
         <settings>
-          <option name="imageTag" value="micro/loans:latest" />
-          <option name="containerName" value="" />
-          <option name="sourceFilePath" value="loans/Dockerfile" />
+          <option name="services">
+            <list>
+              <option value="cardsdb" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose/default/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="default.loansdb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="loansdb" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose/default/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="default.rabbit: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="rabbit" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose/default/docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.default: Compose Deployment" />
+      <item itemvalue="Docker.default.accountsdb: Compose Deployment" />
+      <item itemvalue="Docker.default.cardsdb: Compose Deployment" />
+      <item itemvalue="Docker.default.loansdb: Compose Deployment" />
+      <item itemvalue="Docker.default.rabbit: Compose Deployment" />
       <item itemvalue="Docker.accounts/Dockerfile" />
-      <item itemvalue="Docker.cards/Dockerfile" />
-      <item itemvalue="Docker.configserver/Dockerfile" />
-      <item itemvalue="Docker.loans/Dockerfile" />
+      <item itemvalue="Spring Boot.EurekaserverApplication" />
       <item itemvalue="Spring Boot.AccountsApplication" />
       <item itemvalue="Spring Boot.CardsApplication" />
       <item itemvalue="Spring Boot.ConfigserverApplication" />
@@ -344,11 +383,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.default: Compose Deployment" />
+        <item itemvalue="Docker.default.loansdb: Compose Deployment" />
+        <item itemvalue="Docker.default.cardsdb: Compose Deployment" />
+        <item itemvalue="Docker.default.rabbit: Compose Deployment" />
+        <item itemvalue="Docker.default.accountsdb: Compose Deployment" />
         <item itemvalue="Docker.accounts/Dockerfile" />
-        <item itemvalue="Docker.cards/Dockerfile" />
-        <item itemvalue="Docker.loans/Dockerfile" />
-        <item itemvalue="Docker.configserver/Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -389,7 +428,11 @@
       <workItem from="1731335285922" duration="21000" />
       <workItem from="1731335312540" duration="24461000" />
       <workItem from="1731477709604" duration="253000" />
-      <workItem from="1731478358534" duration="7785000" />
+      <workItem from="1731478358534" duration="12471000" />
+      <workItem from="1731583790172" duration="7000" />
+      <workItem from="1731936894023" duration="378000" />
+      <workItem from="1731996714059" duration="17000" />
+      <workItem from="1731996736759" duration="15952000" />
     </task>
     <task id="LOCAL-00001" summary="Config.server .yml files structure changed.">
       <option name="closed" value="true" />
@@ -407,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731394689347</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Docker compose files changed.">
+      <option name="closed" value="true" />
+      <created>1731488200586</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731488200586</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,6 +467,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Config.server .yml files structure changed." />
     <MESSAGE value="Docker compose file for default, prod, and qa and other changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Docker compose file for default, prod, and qa and other changes" />
+    <MESSAGE value="Docker compose files changed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker compose files changed." />
   </component>
 </project>
