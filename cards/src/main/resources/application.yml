@@ -16,7 +16,7 @@ spring:
     init:
       mode: always
   config:
-    import: "optional:configserver:http://localhost:8071/"
+    import: "optional:configserver:http://configserver-ms:8071/"
   rabbitmq:
     host: "localhost"
     port: 5672
@@ -38,7 +38,6 @@ management:
 endpoints:
   shutdown:
     enabled: true
-
 
 eureka:
   instance:
