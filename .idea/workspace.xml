@@ -4,22 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51e563e5-1b33-4c68-8520-887471a5d83e" name="Changes" comment="Eureka Server added. Also, we used feignClient">
-      <change afterPath="$PROJECT_DIR$/eurekaserver/Dockerfile" afterDir="false" />
+    <list default="true" id="51e563e5-1b33-4c68-8520-887471a5d83e" name="Changes" comment="Docker Files and Docker Compose File changed">
+      <change afterPath="$PROJECT_DIR$/gatewayserver/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/omer/gatewayserver/filters/FilterUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/omer/gatewayserver/filters/RequestTraceFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/omer/gatewayserver/filters/ResponseTraceFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/controller/AccountsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/service/client/CardsFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/service/client/CardsFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/service/client/LoansFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/service/client/LoansFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/omer/accounts/service/impl/CustomerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/test/java/com/omer/accounts/AccountsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/test/java/com/omer/accounts/AccountsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/omer/cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/omer/cards/controller/CardsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/test/java/com/omer/cards/CardsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/test/java/com/omer/cards/CardsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/prod/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/common-config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/qa/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/qa/common-config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/omer/loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/omer/loans/controller/LoansController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/test/java/com/omer/loans/LoansApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/test/java/com/omer/loans/LoansApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +46,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Dockerfile" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -79,11 +96,13 @@
     "Docker.default: Compose Deployment.executor": "Run",
     "Docker.eurekaserver/Dockerfile.executor": "Run",
     "Docker.loans/Dockerfile.executor": "Run",
+    "Maven.accounts [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "false",
     "Spring Boot.AccountsApplication.executor": "Run",
     "Spring Boot.CardsApplication.executor": "Run",
@@ -124,7 +143,7 @@
       <recent name="com.omer.accounts.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.default.rabbit: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.AccountsApplication">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="master-microservices-with-spring-boot-docker-kubernetes" />
       <option name="ENV_FILES" value="" />
@@ -279,6 +298,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="gatewayserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.omer.gatewayserver.GatewayserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="loans" />
@@ -369,6 +396,7 @@
       <item itemvalue="Docker.default.cardsdb: Compose Deployment" />
       <item itemvalue="Docker.default.loansdb: Compose Deployment" />
       <item itemvalue="Docker.default.rabbit: Compose Deployment" />
+      <item itemvalue="Spring Boot.GatewayserverApplication" />
       <item itemvalue="Spring Boot.EurekaserverApplication" />
       <item itemvalue="Spring Boot.AccountsApplication" />
       <item itemvalue="Spring Boot.CardsApplication" />
@@ -432,7 +460,11 @@
       <workItem from="1732186031706" duration="9517000" />
       <workItem from="1732272163568" duration="17000" />
       <workItem from="1732859173632" duration="11000" />
-      <workItem from="1732859190021" duration="15166000" />
+      <workItem from="1732859190021" duration="23273000" />
+      <workItem from="1732981155730" duration="14000" />
+      <workItem from="1732981174465" duration="17120000" />
+      <workItem from="1733577761446" duration="128000" />
+      <workItem from="1733577899174" duration="13923000" />
     </task>
     <task id="LOCAL-00001" summary="Config.server .yml files structure changed.">
       <option name="closed" value="true" />
@@ -466,7 +498,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732043657219</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Docker Files and Docker Compose File changed">
+      <option name="closed" value="true" />
+      <created>1732909624406</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732909624406</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,6 +517,7 @@
     <MESSAGE value="Docker compose file for default, prod, and qa and other changes" />
     <MESSAGE value="Docker compose files changed." />
     <MESSAGE value="Eureka Server added. Also, we used feignClient" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eureka Server added. Also, we used feignClient" />
+    <MESSAGE value="Docker Files and Docker Compose File changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker Files and Docker Compose File changed" />
   </component>
 </project>
