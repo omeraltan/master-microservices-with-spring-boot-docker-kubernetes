@@ -1,7 +1,6 @@
 package com.eazybytes.accounts.exception;
 
 import com.eazybytes.accounts.dto.ErrorResponseDto;
-import org.jspecify.annotations.Nullable;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
@@ -23,7 +22,7 @@ import java.util.Map;
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     @Override
-    protected @Nullable ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatusCode status, WebRequest request) {
+    protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatusCode status, WebRequest request) {
         Map<String, String> validationErrors = new HashMap<>();
         List<ObjectError> validationErrorList = ex.getBindingResult().getAllErrors();
 
@@ -39,7 +38,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     public ResponseEntity<ErrorResponseDto> handleGlobalException(Exception exception, WebRequest webRequest) {
         ErrorResponseDto errorResponseDto = new ErrorResponseDto(
             webRequest.getDescription(false),
-            HttpStatus.INTERNAL_SERVER_ERROR,
+            HttpStatus.INTERNAL_SERVER_ERROR.toString(),
             exception.getMessage(),
             LocalDateTime.now()
         );
@@ -50,7 +49,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     public ResponseEntity<ErrorResponseDto> handleResourceNotFoundException(ResourceNotFoundException exception, WebRequest webRequest) {
         ErrorResponseDto errorResponseDto = new ErrorResponseDto(
             webRequest.getDescription(false),
-            HttpStatus.NOT_FOUND,
+            HttpStatus.NOT_FOUND.toString(),
             exception.getMessage(),
             LocalDateTime.now()
         );
@@ -61,7 +60,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     public ResponseEntity<ErrorResponseDto> handleCustomerAlreadyExistsException(CustomerAlreadyExistsException exception, WebRequest webRequest) {
         ErrorResponseDto errorResponseDto = new ErrorResponseDto(
             webRequest.getDescription(false),
-            HttpStatus.BAD_REQUEST,
+            HttpStatus.BAD_REQUEST.toString(),
             exception.getMessage(),
             LocalDateTime.now()
         );
